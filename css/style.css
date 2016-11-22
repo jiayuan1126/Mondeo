@@ -235,11 +235,25 @@ body,html{
 #pages .page3{
 	width: 100%;
 	height: 100%;
-    background-image: url();
+    background-image: url(../img/page3/page3.jpg);
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+#pages .page3 .video{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	left:0;
+	top:32%;
+}
+#my-video{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top:0;
 }
 #pages .page4{
 	width: 100%;

@@ -1,3 +1,9 @@
+window.onload=function(){
+	document.getElementById("my-video").addEventListener('touchend',function(){
+//	$('#videoStart').hide();
+	document.getElementById("my-video").play();
+},false);
+}
 $(function(){
 	$("body").css('height',$(window).height());
 	$("body").css('width',$(window).width());
@@ -27,4 +33,7 @@ $(function(){
 			$this.addClass('i-click');
 		};
 	})
+	
+	
 })
+

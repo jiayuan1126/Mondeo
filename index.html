@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
 		<!--从桌面icon启动IOS Safari是否进入全屏状态（APP模式-->
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -20,10 +21,125 @@
 		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
+
 	<body>
-		
-		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
-		<script type="text/javascript" src="js/swiper-3.3.1.min.js" ></script>
-		<script type="text/javascript" src="js/script.js" ></script>
+		<div id="pages" class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide page1">
+					<div class="gw"></div>
+					<div class="next nextPage text">
+						<img src="img/jt.png" />
+					</div>
+				</div>
+				<div class="swiper-slide page2">
+					<div class="fromInput">
+						<div class="page-2-item">
+							<span class="sp1">姓&ensp;&ensp;名：</span>
+							<div class="input">
+								<input type="text" name="name" id="name" placeholder="请填写姓名">
+							</div>
+						</div>
+						<div class="page-2-item">
+							<span class="sp2">性&ensp;&ensp;别：</span>
+							<span class="cb">
+		                            <span class="i-box-wrap i-click" data-value="先生">
+		                                <span class="i-box"></span><span>&nbsp;先生</span>
+							</span>
+							<span class="i-box-wrap" id="yuan" data-value="女士">
+		                                <span class="i-box"></span><span>&nbsp;女士</span>
+							</span>
+							</span>
+						</div>
+						<div class="page-2-item">
+							<span class="sp3">手&ensp;&ensp;机：</span>
+							<div class="input">
+								<input type="number" name="phone" id="phone" placeholder="请填写手机号码">
+							</div>
+						</div>
+						<div class="page-2-item">
+							<span class="sp4">省&ensp;&ensp;份：</span>
+							<div class="input">
+								<select id="province">
+									<option value="">请选择省份</option>
+								</select>
+							</div>
+						</div>
+						<div class="page-2-item">
+							<span class="sp5">城&ensp;&ensp;市：</span>
+							<div class="input">
+								<select id="city">
+									<option value="">请选择城市</option>
+								</select>
+							</div>
+						</div>
+						<div class="page-2-item">
+							<span class="sp6">经销商：</span>
+							<div class="input">
+								<select id="jxs">
+									<option value="">请选择经销商</option>
+								</select>
+							</div>
+						</div>
+						<div class="page-2-item">
+							<span class="sp7">购车时间：</span>
+							<div class="input inp1">
+								<select id="time">
+									<option value="">请选择购车时间</option>
+									<option value="0-3个月">0-1个月</option>
+									<option value="4-6个月">2-3个月</option>
+									<option value="7-12个月">4-6个月</option>
+									<option value="一年以后">7-12</option>
+									<select>
+							</div>
+						</div>
+						<div class="textCheckbox">
+							<div class="gou">
+								<img data-flag='true' src="img/page2/gou1.png">
+							</div>
+							<div class="zi">
+								我已阅读并接受隐私条款:
+							</div>
+						</div>
+						<div class="textInfo">
+							您的个人资料有可能会提交至福特厂商的授权经销商客服与您进一步沟通试驾、购车等事宜。
+						</div>
+						<div class="btn">马上报名</div>
+					</div>
+					<div class="next nextPage text">
+						<img src="img/jt.png" />
+					</div>
+				</div>
+				<div class="swiper-slide page3"></div>
+				<div class="swiper-slide page4">
+					<div id="page4Box" class="swiper-wrapper">
+						<div class="swiper-wrapper pageCommon">
+							<div class="swiper-slide page4Child1"></div>
+							<div class="swiper-slide page4Child2"></div>
+							<div class="swiper-slide page4Child3"></div>
+							<div class="swiper-slide page4Child4"></div>
+						</div>
+						<div id="fenye1" class="fenye1"></div>
+					</div>
+					<div class="next nextPage text">
+						<img src="img/jt.png" />
+					</div>
+				</div>
+				<div class="swiper-slide page5">
+					<div id="page5Box" class="swiper-wrapper">
+						<div class="swiper-wrapper pageCommon">
+							<div class="swiper-slide page5Child1"></div>
+							<div class="swiper-slide page5Child2"></div>
+							<div class="swiper-slide  page5Child3"></div>
+							<div class="swiper-slide  page5Child4"></div>
+						</div>
+						<div id="fenye2" class="fenye2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
+
 </html>

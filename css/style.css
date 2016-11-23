@@ -74,6 +74,16 @@ body,html{
 	height: 100%;
 	position: relative;
 }
+#loading {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/loading.gif) no-repeat center #fff;
+    background-size: auto 100%;
+    z-index: 300;
+}
 #pages{
 	width: 100%;
 	height: 100%;
@@ -112,20 +122,20 @@ body,html{
 }
 #pages .page2 .fromInput{
 	width: 100%;
-	height: 60%;
+	height: 46%;
 	position: absolute;
 	left:0;
-	top:25%;
+	top:23%;
 }
 #pages .page2 .fromInput .page-2-item{
 	width: 100%;
-	height: 9%;
+	height: 10%;
 	margin-top: 3%;
 	display: flex;
 	display: -webkit-flex;
 }
 .fromInput .sp1,.sp2,.sp3,.sp4,.sp5,.sp6,.sp7{
-	width: 27%;
+	width: 30%;
 	height: 100%;
 	display: flex;
 	display: -webkit-flex;
@@ -135,10 +145,12 @@ body,html{
 	justify-content: flex-end;
 	-webkit-justify-content: flex-end;
 	color: #000;
-	font-size: 1.2rem;
+	font-size: 1rem;
+	flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
 }
 #pages .page2 .input{
-	width: 63%;
+	width: 62%;
     height: 100%;
     background-color: #fafafa;
     border: solid 1px #d3d2cf;
@@ -148,8 +160,23 @@ body,html{
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-left: 1%;
+    
+}
+#pages .page2 select{
+    background-color: #fafafa;
+    border-radius: 5px;
+    display: block;
+    height: 100%;
+    width: 95%;
+    appearance: none;
+    -webkit-appearance: none;
+    color: #969696;
+    	background-image: url(../img/xb.png);
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
+	background-size:12px 6px;
 }
 .page2 .cb{
 	width: 65%;
@@ -173,18 +200,18 @@ body,html{
 	background-image: url(../img/page2/u1.png);
 }
 .page2 .textCheckbox {
-  height: 30px;
-  width: 90%;
+   height: 30px;
+  width: 84%;
   margin-left: 1.3rem;
   font-size: 0.9rem;
   color: #b8babb;
   position: absolute;
-  left:3%;
-  bottom:8%;
+  left:5.5%;
+  bottom:27%;
 }
 .page2 .textCheckbox .gou {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   border-radius: 3px;
   background-color: #686868;
   position: absolute;
@@ -196,31 +223,34 @@ body,html{
   width: 100%;
 }
 .page2 .textCheckbox .zi {
-  height: 100%;
+   height: 100%;
   width: 70%;
   position: absolute;
   top: 0;
   left: 25px;
   line-height: 30px;
+  color: #000;
+  font-size: 0.8rem;
 }
 .page2 .textInfo {
-  width: 84%;
+ width: 84%;
   margin-left: 1.3rem;
   margin-bottom: 6px;
   margin-top: 6px;
   font-size: 0.8rem;
-  color: #bfc1c2;
+  color: #51565a;
   position: absolute;
-  left:3%;
-  bottom:0%;
+  left:5.5%;
+  bottom:21%;
   line-height: 18px;
+  font-size: 0.8rem;
 }
 #pages .page2 .btn{
-	position: absolute;
-	left: 8%;
-	top:100%;
-	width: 85%;
-	height: 11%;
+position: absolute;
+	left: 10.5%;
+	top:79%;
+	width: 84%;
+	height: 6%;
 	background:transparent;
 	z-index: 4;
 	background: #000;
@@ -232,6 +262,82 @@ body,html{
 	justify-content: center;
 	-webkit-justify-content: center;
 }
+@media all and (min-height: 400px) and (max-height: 420px) {
+	
+#pages .page2 .btn{
+	position: absolute;
+	left: 10.5%;
+	top:83%;
+	width: 89%;
+}	
+.page2 .textInfo {
+ 
+  position: absolute;
+  left:4%;
+  bottom:16.5%;
+  line-height: 12px;
+  font-size: 0.6rem;
+  width: 89%;
+  
+}
+.page2 .textCheckbox {
+  
+  position: absolute;
+  left:4%;
+  bottom:22%;
+  font-size: 0.5rem;
+  width: 89%;
+}
+.page2 .textCheckbox .gou {
+  height: 15px;
+  width: 15px;
+}
+}
+@media all and (width: 320px) and (max-height: 568px) {
+	
+#pages .page2 .btn{
+	position: absolute;
+	left: 5.5%;
+}	
+.page2 .textInfo {
+ 
+  position: absolute;
+  left:-1.5%;
+}
+.page2 .textCheckbox {
+  
+  position: absolute;
+  left:-1.5%;
+  
+}
+.page2 .textCheckbox .gou {
+  height: 15px;
+  width: 15px;
+  left:2px;
+}
+}
+@media all and (width: 384px) and (max-height: 568px) {
+	
+#pages .page2 .btn{
+	position: absolute;
+	top:80%;
+}	
+.page2 .textInfo {
+ 
+  position: absolute;
+  bottom:19%;
+}
+.page2 .textCheckbox {
+  position: absolute;
+  bottom: 25%;  
+}
+.page2 .textCheckbox .gou {
+  height: 15px;
+  width: 15px;
+  left:2px;
+}
+}
+
 #pages .page3{
 	width: 100%;
 	height: 100%;
@@ -247,13 +353,12 @@ body,html{
 	position: absolute;
 	left:0;
 	top:32%;
+	text-align: center;
 }
 #my-video{
 	width: 100%;
 	height: 100%;
-	position: absolute;
-	left:0;
-	top:0;
+	
 }
 #pages .page4{
 	width: 100%;
